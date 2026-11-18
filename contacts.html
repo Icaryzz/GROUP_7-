@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Black Beauty</title>
+<style>
+  * { box-sizing: border-box; margin: 0; padding: 0; }
+  body { font-family: 'Times New Roman', serif; color: #222; }
+  a { color: inherit; text-decoration: none; }
+  h2 { font-weight: normal; text-transform: uppercase; text-align: center; margin-bottom: 30px; }
+  section { padding: 50px 40px; }
+
+  /* HEADER */
+  header { background: #f7f7f5; display: flex; align-items: center; justify-content: space-between; padding: 10px 40px; }
+  .logo { height: 50px; width: 110px; object-fit: contain; }
+  nav a { text-transform: uppercase; font-size: 14px; margin: 0 12px; }
+  nav a:hover { text-decoration: underline; }
+  .spacer { width: 110px; }   /* keeps the menu centered */
+
+  /* HERO */
+  .hero { background: #e8ebe4; text-align: center; height: 50px; border: 2px;}
+  .hero h1 { font-weight: normal; font-size: 64px; text-transform: uppercase; }
+  .hero p { font-size: 22px; margin: 5px 0 20px; }
+  .order { border: 1px solid black; border-radius: 30px; padding: 6px 80px; display: inline-block; }
+  .perks { text-align: left; margin-top: 60px; font-size: 22px; line-height: 2; }
+
+  /* BEST SELLERS */
+  .best { background: white; }
+  .row { display: flex; gap: 25px; }
+  .product { flex: 1; border: 1px solid black; padding: 15px; text-align: center; }
+   
+  .product button { background: #A08E1E; color: white; border: none; border-radius: 20px; padding: 6px 22px; margin-top: 12px; }
+
+  /* INGREDIENTS */
+  .ingredients { background: #F1EBAD; }
+  .ingredient { flex: 1; display: flex; align-items: center; gap: 20px; }
+  .circle { width: 55px; height: 55px; border: 1px solid black; border-radius: 50%; }
+  .ingredients .row { margin-bottom: 25px; }
+  .ingredient h3 { font-weight: normal; text-transform: uppercase; font-size: 16px; }
+
+  /* JOURNAL */
+  .journal { background: white; }
+  .post { flex: 1; }
+  .post .image { height: 120px; }
+
+  /* FOOTER */
+  footer { background: black; color: white; padding: 40px; }
+  footer .row { font-size: 13px; }
+  footer div { flex: 1; }
+  footer h4 { text-transform: uppercase; margin-bottom: 8px; }
+  footer p { margin-bottom: 5px; }
+  .footer-name { text-align: center; margin-top: 30px; text-transform: uppercase; }
+
+  /* On small screens, stack everything */
+  @media (max-width: 800px) {
+    .row { flex-direction: column; }
+    header { flex-direction: column; gap: 10px; }
+    .spacer { display: none; }
+  }
+</style>
+</head>
+<body>
+
+<header>
+  <!-- LOGO -->
+  <img class="logo" src="IMAGES/327176067_856763338905141_3168379092967939775_n-removebg-preview.png" alt="Black Beauty logo">
+  <nav>
+    <a href="home.html">Home</a>
+    <a href="products.html">Shampoo &amp; Conditioners</a>
+    <a href="features.html">Features</a>
+    <a href="about.html">About</a>
+    <a href="contacts.html">Contacts</a>
+  </nav>
+  <div class="spacer"></div>
+</header>
+
+<section class="hero">
+  <h1></h1>
+  <p></p>
+  <a class="order" href="shampoo-conditioner.html"></a>
+  <div class="perks">
+    <div></div>
+    <div></div>
+  </div>
+</section>
+
+
+
+<footer>
+  <div class="row">
+    <div><h4>Help &amp; Info</h4><p>FAQ</p><p>Shipping</p><p>Returns</p><p>Track Orders</p></div>
+    <div><h4>Company</h4><p>About Us</p><p>Careers</p><p>Contacts</p></div>
+    <div><h4>Legal</h4><p>Privacy Policy</p><p>Terms</p></div>
+    <div><h4>Newsletter</h4><p><input type="email" placeholder="Email"></p><h4>Social Media</h4></div>
+  </div>
+  <p class="footer-name">Black Beauty</p>
+</footer>
+
+</body>
+</html>
